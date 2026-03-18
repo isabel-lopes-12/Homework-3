@@ -1,0 +1,13 @@
+function splitLines(text) {
+  const lines = text.split(/\r?\n/);
+
+  if (lines[lines.length - 1] === "") {
+    lines.pop();
+  }
+
+  return lines;
+}
+
+function textValuesToNumbers(textValues) {
+  return textValues.map(Number);
+}
