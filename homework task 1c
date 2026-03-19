@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 1c</title>
+</head>
+<body>
+  <h1>Pair sums</h1>
+  <ul id="result"></ul>
+
+  <script>
+    function displayPairSums(numbers) {
+      const resultList = document.getElementById("result");
+      resultList.innerHTML = "";
+
+      for (let i = 0; i < numbers.length - 1; i++) {
+        const li = document.createElement("li");
+        li.textContent = `${numbers[i]} + ${numbers[i + 1]} = ${numbers[i] + numbers[i + 1]}`;
+        resultList.appendChild(li);
+      }
+    }
+
+    displayPairSums([1.2, -3.4, 5.6, 2]);
+  </script>
+</body>
+</html>
